@@ -15,8 +15,8 @@
 // Font attributes.
 // ------------------------------------
 
-$font-size: 14px
-$font-line: 1.5em
+$font-size: 20px
+$line-height: 1.5em
 $font-indent: 2em
 
 
@@ -24,12 +24,12 @@ $font-indent: 2em
 // Heading attributes.
 // ------------------------------------
 
-$font-size-h1: $font-size * 3.5
-$font-size-h2: $font-size * 3.0
-$font-size-h3: $font-size * 2.5
-$font-size-h4: $font-size * 2.0
-$font-size-h5: $font-size * 1.5
-$font-size-h6: $font-size * 1.0
+$font-size-h1: $font-size * 2.60
+$font-size-h2: $font-size * 1.70
+$font-size-h3: $font-size * 1.50
+$font-size-h4: $font-size * 1.30
+$font-size-h5: $font-size * 0.85
+$font-size-h6: $font-size * 0.80
 
 
 // ------------------------------------
@@ -50,9 +50,10 @@ $font-courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif
 // ------------------------------------
 
 // $font-[NAME]: [DEFINITION]
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,300)
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,400italic,700,300)
 
 $font-open-sans: 'Open Sans', sans-serif
+$font-lora: 'Lora', serif
 
 // ------------------------------------
 // Default font families.
@@ -60,4 +61,5 @@ $font-open-sans: 'Open Sans', sans-serif
 
 $font-base: $font-arial
 
-$font-text: $font-open-sans
+$font-text:    $font-open-sans
+$font-heading: $font-lora
