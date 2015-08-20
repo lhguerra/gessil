@@ -6,11 +6,40 @@ body
   font-family: $font-text
   font-size: $font-size
   line-height: $line-height
+  +breakpoint($small-width-breakpoint)
+    font-size: $font-size-small
+    line-height: $line-height-small
 
 h1, h2, h3
   font-family: $font-heading
 
+h1
+  font-size: $font-size-h1
+
+h2
+  font-size: $font-size-h2
+
+h3
+  font-size: $font-size-h3
+
+h4
+  font-size: $font-size-h4
+
+h5
+  font-size: $font-size-h5
+
+h6
+  font-size: $font-size-h6
+  
 .mdl-grid
   max-width: 1280px
   +breakpoint($big-width-breakpoint)
     max-width: 1024px
+
+.not-front #main
+  @extend .mdl-grid
+  @extend .mdl-shadow--2dp
+  padding: 2rem
+  background-color: $light-gray
+  margin-top: 2rem
+  margin-bottom: 2rem
