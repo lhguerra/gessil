@@ -1,6 +1,7 @@
 .view-gallery
   
   h2
+    margin-left: 16px
     color: $black
 
   .item-list ul
@@ -28,6 +29,7 @@
     p
       line-height: 1.2em
       padding: 1em
+      margin-bottom: 0
 
 ul.pager
   text-align: center
@@ -48,6 +50,10 @@ ul.pager
         @extend .mdl-button--fab
         @extend .mdl-button--colored
         @extend %text-round-button
+        background-color: $pink
+
+        &:hover
+          background-color: $lightest-red
 
     &.pager-current
       @extend .mdl-button
