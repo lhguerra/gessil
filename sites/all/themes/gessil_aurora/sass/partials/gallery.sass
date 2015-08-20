@@ -1,0 +1,56 @@
+.view-gallery
+  
+  h2
+    color: $black
+
+  .item-list ul
+    @extend .mdl-grid
+
+  .views-row
+    @extend .mdl-card
+    @extend .mdl-shadow--2dp
+    @extend .mdl-cell
+    @extend .mdl-cell--4-col
+    position: relative
+
+  img
+    width: 100%
+    height: auto
+
+  .views-field-body
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: $transluscent-black
+    color: $lightest-gray
+
+    p
+      line-height: 1.2em
+      padding: 1em
+
+ul.pager
+  text-align: center
+  padding-left: 0
+
+  li
+    list-style: none
+    display: inline-block
+    margin: 0.5em
+
+    &.pager-item,
+    &.pager-next,
+    &.pager-last,
+    &.pager-first,
+    &.pager-previous
+      a
+        @extend .mdl-button
+        @extend .mdl-button--fab
+        @extend .mdl-button--colored
+        @extend %text-round-button
+
+    &.pager-current
+      @extend .mdl-button
+      @extend .mdl-button--fab
+      @extend %text-round-button
+      margin: 0.5em

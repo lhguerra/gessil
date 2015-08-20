@@ -132,12 +132,18 @@ function gessil_aurora_preprocess_comment(&$vars) {
  * @param $vars
  *   An array of variables to pass to the theme template.
  */
-/* -- Delete this line if you want to use this function
 function gessil_aurora_preprocess_views_view(&$vars) {
-  $view = $vars['view'];
-}
-// */
 
+  $view = $vars['view'];
+  
+// Add title for page views
+  if ($view->display_handler->plugin_name == 'page') {
+    if ($vars['title'] = $view->get_title()) {
+      $vars['title_prefix'] = array('#markup' => '<h2>');
+      $vars['title_suffix'] = array('#markup' => '</h2>');
+    }
+  }
+}
 
 /**
  * Override or insert css on the site.
