@@ -1,6 +1,5 @@
 body
   background-color: $lightest-gray
-  background-image: url(../img/bg.jpg)
   background-repeat: no-repeat
   background-size: 100% auto
   font-family: $font-text
@@ -37,9 +36,8 @@ h6
     max-width: 1024px
 
 .not-front #main
+  @extend %basic-box
   @extend .mdl-grid
-  @extend .mdl-shadow--2dp
   padding: 2rem
-  background-color: $light-gray
   margin-top: 2rem
   margin-bottom: 2rem
