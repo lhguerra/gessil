@@ -29,7 +29,21 @@ h5
 
 h6
   font-size: $font-size-h6
+
+p
+  font-size: $font-size
+  line-height: $line-height
+  max-width: 32em
+  margin: 1em auto
+
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  hyphens: auto
   
+  +breakpoint($small-width-breakpoint)
+    font-size: $font-size-small
+    line-height: $line-height-small
+
 .mdl-grid
   max-width: 1280px
   +breakpoint($big-width-breakpoint)
