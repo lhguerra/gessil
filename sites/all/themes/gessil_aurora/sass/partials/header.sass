@@ -6,7 +6,16 @@
 
   > div
     @extend .mdl-cell
-    @extend .mdl-cell--6-col
+
+    &#block-block-1
+      @extend .mdl-cell--4-col
+
+    &#block-system-main-menu
+      @extend .mdl-cell--8-col
+
+    +breakpoint($medium-width-breakpoint)
+      width: 100% !important
+      text-align: center
 
   h2
     display: none
@@ -20,11 +29,17 @@
     text-align: right
     margin: 0
 
+    +breakpoint($medium-width-breakpoint)
+      text-align: center
+      padding: 0
+
   li
     display: inline-block
     list-style: none
-    line-height: 7rem
+    line-height: 9rem
     font-size: $font-size-h3
+    +breakpoint($medium-width-breakpoint)
+      line-height: 3rem
 
   a
     text-decoration: none
