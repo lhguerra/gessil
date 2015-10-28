@@ -1,10 +1,9 @@
 body
   background-color: $lightest-gray
-  background-repeat: no-repeat
-  background-size: 100% auto
   font-family: $font-text
   font-size: $font-size
   line-height: $line-height
+
   +breakpoint($small-width-breakpoint)
     font-size: $font-size-small
     line-height: $line-height-small
@@ -39,7 +38,7 @@ p
   -webkit-hyphens: auto
   -moz-hyphens: auto
   hyphens: auto
-  
+
   +breakpoint($small-width-breakpoint)
     font-size: $font-size-small
     line-height: $line-height-small
@@ -56,6 +55,7 @@ p
   margin-top: 2rem
   margin-bottom: 2rem
 
-.page-node .node-page
+.page-node .node-page,
+.front .block-block
   max-width: 700px
   margin: 0 auto
