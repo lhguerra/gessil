@@ -48,7 +48,6 @@ function gessil_aurora_preprocess_html(&$vars) {
  *   An array of variables to pass to the theme template.
  */
 function gessil_aurora_preprocess_page(&$vars) {
-  dsm($vars);
   $vars['page']['content']['views_home-block_1']['#weight'] = 10;
 }
 
