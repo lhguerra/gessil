@@ -47,9 +47,8 @@ function gessil_aurora_preprocess_html(&$vars) {
  * @param $vars
  *   An array of variables to pass to the theme template.
  */
-/* -- Delete this line if you want to use this function
 function gessil_aurora_preprocess_page(&$vars) {
-
+  $vars['page']['content']['views_home-block_1']['#weight'] = 10;
 }
 
 /**
@@ -135,7 +134,7 @@ function gessil_aurora_preprocess_comment(&$vars) {
 function gessil_aurora_preprocess_views_view(&$vars) {
 
   $view = $vars['view'];
-  
+
 // Add title for page views
   if ($view->display_handler->plugin_name == 'page') {
     if ($vars['title'] = $view->get_title()) {
